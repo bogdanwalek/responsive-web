@@ -23,10 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">First</a>
+            <a class="nav-link active" aria-current="page" href="./form.html">Form</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Second</a>
+            <a class="nav-link" href="./table.html">Table</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">Third</a>
@@ -66,12 +66,91 @@
                      id="login-email" value="test@test.cz">
             </div>
             <div class="col-auto">
-              <label for="login-password" class="visually-hidden">Email</label>
+              <label for="login-password" class="visually-hidden">Password</label>
               <input type="password" class="form-control"
                      id="login-password" placeholder="type your password">
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div>
+
+          </form>
+
+          <h3>Classic form</h3>
+          <form class="row g-3 row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control is-valid" id="name" value="" required>
+              <div class="valid-feedback">
+                Correct
+              </div>
+            </div>
+            <div class="col mb-3">
+              <label for="surname" class="form-label">Surname</label>
+              <input type="text" class="form-control is-invalid" id="surname" value="" required>
+              <div class="invalid-feedback">
+                Incorrect
+              </div>
+            </div>
+            <div class="col mb-3">
+              <label for="region" class="form-label">Region</label>
+              <select class="form-select" id="region">
+                <option selected disabled value="">Select region</option>
+                <option value="MSK">Moravskoslezský</option>
+                <option value="OL">Olomoucký</option>
+                <option value="JM">Jihomoravský</option>
+              </select>
+            </div>
+
+            <div class="col mb-3">
+              <label for="hobby" class="form-label">Hobby</label>
+              <div class="form-check" id="hobby">
+                <input class="form-check-input" type="checkbox" name="hobby" value="mountains" id="mountains">
+                <label class="form-check-label" for="mountains">mountains</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobby" value="movies" id="movies">
+                <label class="form-check-label" for="movies">movies</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobby" value="shopping" id="shopping">
+                <label class="form-check-label" for="shopping">shopping</label>
+              </div>
+            </div>
+
+            <div class="col mb-3">
+              <label for="sex" class="form-label">Sex</label>
+              <div class="form-check" id="sex">
+                <input class="form-check-input" type="radio" name="sex" value="male" id="male">
+                <label class="form-check-label" for="male">male</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" value="female" id="female">
+                <label class="form-check-label" for="female">female</label>
+              </div>
+            </div>
+
+
+            <div class="col mb-3">
+              <label for="range" class="form-label">Range</label>
+              <input type="range" class="form-range" id="range" min="0" max="10">
+            </div>
+            <div class="col mb-3">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age"  value="18">
+            </div>
+            <div class="col mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" value="" required>
+            </div>
+
+            <div class="col mb-3">
+              <label for="note" class="form-label">Note</label>
+              <textarea class="form-control" id="note" rows="3"></textarea>
+            </div>
+
+            <div class="col mb-3">
+              <button class="btn btn-primary" type="submit">Send</button>
             </div>
 
           </form>
@@ -88,7 +167,7 @@
    
       
     <footer class="mt-5 pt-3 pb-2">
-      <p class="text-center">&copy; Bootstrap website 2025</p>
+      <p class="text-center">&copy; Bootstrap website 2026</p>
     </footer>  
     
        
